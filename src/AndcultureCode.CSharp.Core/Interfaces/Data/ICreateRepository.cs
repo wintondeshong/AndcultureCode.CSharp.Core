@@ -12,6 +12,17 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Data
     /// </summary>
     public interface ICreateRepository<T> where T : class, IEntity
     {
+        #region Properties
+
+        /// <summary>
+        /// Ability to set and get the underlying DbContext's command timeout
+        /// </summary>
+        int? CommandTimeout { get; set; }
+
+        #endregion Properties
+
+        #region Methods
+
         #region BulkCreate
 
         /// <summary>
@@ -101,5 +112,7 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Data
         Task<IResult<List<T>>> CreateDistinctAsync<TKey>(IEnumerable<T> items, Func<T, TKey> property, long? createdById = null);
 
         #endregion CreateDistinctAsync
+
+        #endregion Methods
     }
 }

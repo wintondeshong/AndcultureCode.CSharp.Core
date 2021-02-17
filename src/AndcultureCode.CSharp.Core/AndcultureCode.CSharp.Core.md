@@ -172,6 +172,18 @@
   - [Password](#P-AndcultureCode-CSharp-Core-Interfaces-Data-IConnection-Password 'AndcultureCode.CSharp.Core.Interfaces.Data.IConnection.Password')
   - [UserId](#P-AndcultureCode-CSharp-Core-Interfaces-Data-IConnection-UserId 'AndcultureCode.CSharp.Core.Interfaces.Data.IConnection.UserId')
   - [ToString()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IConnection-ToString-System-String- 'AndcultureCode.CSharp.Core.Interfaces.Data.IConnection.ToString(System.String)')
+- [ICreateRepository\`1](#T-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1 'AndcultureCode.CSharp.Core.Interfaces.Data.ICreateRepository`1')
+  - [CommandTimeout](#P-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-CommandTimeout 'AndcultureCode.CSharp.Core.Interfaces.Data.ICreateRepository`1.CommandTimeout')
+  - [BulkCreate()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-BulkCreate-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.ICreateRepository`1.BulkCreate(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
+  - [BulkCreateAsync()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-BulkCreateAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.ICreateRepository`1.BulkCreateAsync(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
+  - [BulkCreateDistinctAsync\`\`1()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-BulkCreateDistinctAsync``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.ICreateRepository`1.BulkCreateDistinctAsync``1(System.Collections.Generic.IEnumerable{`0},System.Func{`0,``0},System.Nullable{System.Int64})')
+  - [BulkCreateDistinct\`\`1()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-BulkCreateDistinct``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.ICreateRepository`1.BulkCreateDistinct``1(System.Collections.Generic.IEnumerable{`0},System.Func{`0,``0},System.Nullable{System.Int64})')
+  - [Create()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-Create-`0,System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.ICreateRepository`1.Create(`0,System.Nullable{System.Int64})')
+  - [Create()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-Create-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.ICreateRepository`1.Create(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
+  - [CreateAsync()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-CreateAsync-`0,System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.ICreateRepository`1.CreateAsync(`0,System.Nullable{System.Int64})')
+  - [CreateAsync()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-CreateAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.ICreateRepository`1.CreateAsync(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
+  - [CreateDistinctAsync\`\`1()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-CreateDistinctAsync``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.ICreateRepository`1.CreateDistinctAsync``1(System.Collections.Generic.IEnumerable{`0},System.Func{`0,``0},System.Nullable{System.Int64})')
+  - [CreateDistinct\`\`1()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-CreateDistinct``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.ICreateRepository`1.CreateDistinct``1(System.Collections.Generic.IEnumerable{`0},System.Func{`0,``0},System.Nullable{System.Int64})')
 - [ICulture](#T-AndcultureCode-CSharp-Core-Interfaces-ICulture 'AndcultureCode.CSharp.Core.Interfaces.ICulture')
   - [Code](#P-AndcultureCode-CSharp-Core-Interfaces-ICulture-Code 'AndcultureCode.CSharp.Core.Interfaces.ICulture.Code')
   - [IsDefault](#P-AndcultureCode-CSharp-Core-Interfaces-ICulture-IsDefault 'AndcultureCode.CSharp.Core.Interfaces.ICulture.IsDefault')
@@ -182,6 +194,20 @@
   - [ToCultureCodes(cultures,delimiter)](#M-AndcultureCode-CSharp-Core-Extensions-ICultureExtensions-ToCultureCodes-System-Collections-Generic-IEnumerable{AndcultureCode-CSharp-Core-Interfaces-ICulture},System-String- 'AndcultureCode.CSharp.Core.Extensions.ICultureExtensions.ToCultureCodes(System.Collections.Generic.IEnumerable{AndcultureCode.CSharp.Core.Interfaces.ICulture},System.String)')
   - [ToCultureInfo(culture)](#M-AndcultureCode-CSharp-Core-Extensions-ICultureExtensions-ToCultureInfo-AndcultureCode-CSharp-Core-Interfaces-ICulture- 'AndcultureCode.CSharp.Core.Extensions.ICultureExtensions.ToCultureInfo(AndcultureCode.CSharp.Core.Interfaces.ICulture)')
   - [ToCultureInfos(cultures)](#M-AndcultureCode-CSharp-Core-Extensions-ICultureExtensions-ToCultureInfos-System-Collections-Generic-IEnumerable{AndcultureCode-CSharp-Core-Interfaces-ICulture}- 'AndcultureCode.CSharp.Core.Extensions.ICultureExtensions.ToCultureInfos(System.Collections.Generic.IEnumerable{AndcultureCode.CSharp.Core.Interfaces.ICulture})')
+- [IDeleteRepository\`1](#T-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1 'AndcultureCode.CSharp.Core.Interfaces.Data.IDeleteRepository`1')
+  - [CommandTimeout](#P-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-CommandTimeout 'AndcultureCode.CSharp.Core.Interfaces.Data.IDeleteRepository`1.CommandTimeout')
+  - [BulkDelete()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-BulkDelete-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IDeleteRepository`1.BulkDelete(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64},System.Boolean)')
+  - [BulkDeleteAsync()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-BulkDeleteAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IDeleteRepository`1.BulkDeleteAsync(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64},System.Boolean)')
+  - [Delete()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-Delete-System-Int64,System-Nullable{System-Int64},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IDeleteRepository`1.Delete(System.Int64,System.Nullable{System.Int64},System.Boolean)')
+  - [Delete()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-Delete-`0,System-Nullable{System-Int64},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IDeleteRepository`1.Delete(`0,System.Nullable{System.Int64},System.Boolean)')
+  - [Delete(items,deletedById,batchSize,soft)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-Delete-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64},System-Int64,System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IDeleteRepository`1.Delete(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64},System.Int64,System.Boolean)')
+  - [DeleteAsync()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-DeleteAsync-System-Int64,System-Nullable{System-Int64},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IDeleteRepository`1.DeleteAsync(System.Int64,System.Nullable{System.Int64},System.Boolean)')
+  - [DeleteAsync()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-DeleteAsync-`0,System-Nullable{System-Int64},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IDeleteRepository`1.DeleteAsync(`0,System.Nullable{System.Int64},System.Boolean)')
+  - [DeleteAsync(items,deletedById,batchSize,soft)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-DeleteAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64},System-Int64,System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IDeleteRepository`1.DeleteAsync(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64},System.Int64,System.Boolean)')
+  - [Restore()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-Restore-`0- 'AndcultureCode.CSharp.Core.Interfaces.Data.IDeleteRepository`1.Restore(`0)')
+  - [Restore()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-Restore-System-Int64- 'AndcultureCode.CSharp.Core.Interfaces.Data.IDeleteRepository`1.Restore(System.Int64)')
+  - [RestoreAsync()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-RestoreAsync-`0- 'AndcultureCode.CSharp.Core.Interfaces.Data.IDeleteRepository`1.RestoreAsync(`0)')
+  - [RestoreAsync()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-RestoreAsync-System-Int64- 'AndcultureCode.CSharp.Core.Interfaces.Data.IDeleteRepository`1.RestoreAsync(System.Int64)')
 - [IDistributedCacheExtensions](#T-AndcultureCode-CSharp-Core-Extensions-IDistributedCacheExtensions 'AndcultureCode.CSharp.Core.Extensions.IDistributedCacheExtensions')
   - [Get\`\`1(cache,key)](#M-AndcultureCode-CSharp-Core-Extensions-IDistributedCacheExtensions-Get``1-Microsoft-Extensions-Caching-Distributed-IDistributedCache,System-String- 'AndcultureCode.CSharp.Core.Extensions.IDistributedCacheExtensions.Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String)')
   - [Serialize\`\`1(cache,value)](#M-AndcultureCode-CSharp-Core-Extensions-IDistributedCacheExtensions-Serialize``1-Microsoft-Extensions-Caching-Distributed-IDistributedCache,``0- 'AndcultureCode.CSharp.Core.Extensions.IDistributedCacheExtensions.Serialize``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0)')
@@ -206,16 +232,41 @@
 - [IProvider](#T-AndcultureCode-CSharp-Core-Interfaces-Providers-IProvider 'AndcultureCode.CSharp.Core.Interfaces.Providers.IProvider')
   - [Implemented](#P-AndcultureCode-CSharp-Core-Interfaces-Providers-IProvider-Implemented 'AndcultureCode.CSharp.Core.Interfaces.Providers.IProvider.Implemented')
   - [Name](#P-AndcultureCode-CSharp-Core-Interfaces-Providers-IProvider-Name 'AndcultureCode.CSharp.Core.Interfaces.Providers.IProvider.Name')
+- [IReadRepository\`1](#T-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1')
+  - [CommandTimeout](#P-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-CommandTimeout 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.CommandTimeout')
+  - [FindAll(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAll-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindAll(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Boolean)')
+  - [FindAllAsync(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAllAsync-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindAllAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Boolean)')
+  - [FindAllAsync\`\`1(filter,orderBy,groupBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAllAsync``1-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindAllAsync``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Boolean)')
+  - [FindAllAsync\`\`2(filter,orderBy,groupBy,groupBySelector,includeProperties,skip,take,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAllAsync``2-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-Linq-Expressions-Expression{System-Func{``0,System-Collections-Generic-IEnumerable{`0},``1}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindAllAsync``2(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{``0,System.Collections.Generic.IEnumerable{`0},``1}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Boolean)')
+  - [FindAllCommitted(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAllCommitted-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindAllCommitted(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean})')
+  - [FindAllCommittedAsync(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAllCommittedAsync-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindAllCommittedAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean})')
+  - [FindAll\`\`1(filter,orderBy,groupBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAll``1-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindAll``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Boolean)')
+  - [FindAll\`\`2(filter,orderBy,groupBy,groupBySelector,includeProperties,skip,take,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAll``2-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-Linq-Expressions-Expression{System-Func{``0,System-Collections-Generic-IEnumerable{`0},``1}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindAll``2(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{``0,System.Collections.Generic.IEnumerable{`0},``1}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Boolean)')
+  - [FindById(id,ignoreQueryFilters)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindById-System-Int64,System-Nullable{System-Boolean}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindById(System.Int64,System.Nullable{System.Boolean})')
+  - [FindById(id,filter)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindById-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindById(System.Int64,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})')
+  - [FindById(id,includeProperties)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindById-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindById(System.Int64,System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])')
+  - [FindById(id,ignoreQueryFilters,includeProperties)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindById-System-Int64,System-Nullable{System-Boolean},System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindById(System.Int64,System.Nullable{System.Boolean},System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])')
+  - [FindById(id,includeProperties)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindById-System-Int64,System-String[]- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindById(System.Int64,System.String[])')
+  - [FindByIdAsync(id,ignoreQueryFilters)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindByIdAsync-System-Int64,System-Nullable{System-Boolean}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindByIdAsync(System.Int64,System.Nullable{System.Boolean})')
+  - [FindByIdAsync(id,filter)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindByIdAsync-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindByIdAsync(System.Int64,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})')
+  - [FindByIdAsync(id,includeProperties)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindByIdAsync-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindByIdAsync(System.Int64,System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])')
+  - [FindByIdAsync(id,ignoreQueryFilters,includeProperties)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindByIdAsync-System-Int64,System-Nullable{System-Boolean},System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindByIdAsync(System.Int64,System.Nullable{System.Boolean},System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])')
+  - [FindByIdAsync(id,includeProperties)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindByIdAsync-System-Int64,System-String[]- 'AndcultureCode.CSharp.Core.Interfaces.Data.IReadRepository`1.FindByIdAsync(System.Int64,System.String[])')
 - [IRemoteAccessDetails](#T-AndcultureCode-CSharp-Core-Interfaces-Providers-Storage-IRemoteAccessDetails 'AndcultureCode.CSharp.Core.Interfaces.Providers.Storage.IRemoteAccessDetails')
   - [Url](#P-AndcultureCode-CSharp-Core-Interfaces-Providers-Storage-IRemoteAccessDetails-Url 'AndcultureCode.CSharp.Core.Interfaces.Providers.Storage.IRemoteAccessDetails.Url')
 - [IRepositoryConductor\`1](#T-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryConductor`1 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryConductor`1')
   - [CommandTimeout](#P-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryConductor`1-CommandTimeout 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryConductor`1.CommandTimeout')
   - [BulkCreateOrUpdate()](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryConductor`1-BulkCreateOrUpdate-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryConductor`1.BulkCreateOrUpdate(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
+  - [BulkCreateOrUpdateAsync()](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryConductor`1-BulkCreateOrUpdateAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryConductor`1.BulkCreateOrUpdateAsync(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
   - [CreateOrUpdate()](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryConductor`1-CreateOrUpdate-`0,System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryConductor`1.CreateOrUpdate(`0,System.Nullable{System.Int64})')
-  - [CreateOrUpdate(items,createdOrUpdatedById)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryConductor`1-CreateOrUpdate-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryConductor`1.CreateOrUpdate(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
+  - [CreateOrUpdate()](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryConductor`1-CreateOrUpdate-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryConductor`1.CreateOrUpdate(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
+  - [CreateOrUpdateAsync()](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryConductor`1-CreateOrUpdateAsync-`0,System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryConductor`1.CreateOrUpdateAsync(`0,System.Nullable{System.Int64})')
+  - [CreateOrUpdateAsync()](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryConductor`1-CreateOrUpdateAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryConductor`1.CreateOrUpdateAsync(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
 - [IRepositoryCreateConductor\`1](#T-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryCreateConductor`1 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryCreateConductor`1')
   - [CommandTimeout](#P-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryCreateConductor`1-CommandTimeout 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryCreateConductor`1.CommandTimeout')
+  - [BulkCreateDistinctAsync\`\`1(items,property,createdById)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryCreateConductor`1-BulkCreateDistinctAsync``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryCreateConductor`1.BulkCreateDistinctAsync``1(System.Collections.Generic.IEnumerable{`0},System.Func{`0,``0},System.Nullable{System.Int64})')
   - [BulkCreateDistinct\`\`1(items,property,createdById)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryCreateConductor`1-BulkCreateDistinct``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryCreateConductor`1.BulkCreateDistinct``1(System.Collections.Generic.IEnumerable{`0},System.Func{`0,``0},System.Nullable{System.Int64})')
+  - [CreateDistinctAsync\`\`1(items,property,createdById)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryCreateConductor`1-CreateDistinctAsync``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryCreateConductor`1.CreateDistinctAsync``1(System.Collections.Generic.IEnumerable{`0},System.Func{`0,``0},System.Nullable{System.Int64})')
   - [CreateDistinct\`\`1(items,property,createdById)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryCreateConductor`1-CreateDistinct``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryCreateConductor`1.CreateDistinct``1(System.Collections.Generic.IEnumerable{`0},System.Func{`0,``0},System.Nullable{System.Int64})')
 - [IRepositoryDeleteConductor\`1](#T-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryDeleteConductor`1 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryDeleteConductor`1')
   - [CommandTimeout](#P-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryDeleteConductor`1-CommandTimeout 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryDeleteConductor`1.CommandTimeout')
@@ -223,8 +274,14 @@
   - [CommandTimeout](#P-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-CommandTimeout 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.CommandTimeout')
   - [FindAll(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAll-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindAll(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Boolean)')
   - [FindAll(filter,orderBy,nextLinkParams,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAll-System-Collections-Generic-Dictionary{System-String,System-String},System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindAll(System.Collections.Generic.Dictionary{System.String,System.String},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Nullable{System.Boolean},System.Boolean)')
+  - [FindAllAsync(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllAsync-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindAllAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Boolean)')
+  - [FindAllAsync(filter,orderBy,nextLinkParams,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllAsync-System-Collections-Generic-Dictionary{System-String,System-String},System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindAllAsync(System.Collections.Generic.Dictionary{System.String,System.String},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Nullable{System.Boolean},System.Boolean)')
+  - [FindAllAsync\`\`1(filter,orderBy,groupBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllAsync``1-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindAllAsync``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Boolean)')
+  - [FindAllAsync\`\`2(filter,orderBy,groupBy,groupBySelector,includeProperties,skip,take,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllAsync``2-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-Linq-Expressions-Expression{System-Func{``0,System-Collections-Generic-IEnumerable{`0},``1}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindAllAsync``2(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{``0,System.Collections.Generic.IEnumerable{`0},``1}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Boolean)')
   - [FindAllCommitted(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllCommitted-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindAllCommitted(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean})')
   - [FindAllCommitted(filter,orderBy,nextLinkParams,ignoreQueryFilters)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllCommitted-System-Collections-Generic-Dictionary{System-String,System-String},System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Nullable{System-Boolean}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindAllCommitted(System.Collections.Generic.Dictionary{System.String,System.String},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Nullable{System.Boolean})')
+  - [FindAllCommittedAsync(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllCommittedAsync-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindAllCommittedAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean})')
+  - [FindAllCommittedAsync(filter,orderBy,nextLinkParams,ignoreQueryFilters)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllCommittedAsync-System-Collections-Generic-Dictionary{System-String,System-String},System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Nullable{System-Boolean}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindAllCommittedAsync(System.Collections.Generic.Dictionary{System.String,System.String},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Nullable{System.Boolean})')
   - [FindAll\`\`1(filter,orderBy,groupBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAll``1-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindAll``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Boolean)')
   - [FindAll\`\`2(filter,orderBy,groupBy,groupBySelector,includeProperties,skip,take,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAll``2-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-Linq-Expressions-Expression{System-Func{``0,System-Collections-Generic-IEnumerable{`0},``1}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindAll``2(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{``0,System.Collections.Generic.IEnumerable{`0},``1}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Boolean)')
   - [FindById(id)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindById-System-Int64- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindById(System.Int64)')
@@ -232,32 +289,15 @@
   - [FindById(id,includeProperties)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindById-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindById(System.Int64,System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])')
   - [FindById(id,ignoreQueryFilters,includeProperties)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindById-System-Int64,System-Boolean,System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindById(System.Int64,System.Boolean,System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])')
   - [FindById(id,includeProperties)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindById-System-Int64,System-String[]- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindById(System.Int64,System.String[])')
+  - [FindByIdAsync(id)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindByIdAsync-System-Int64- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindByIdAsync(System.Int64)')
+  - [FindByIdAsync(id,filter)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindByIdAsync-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}}- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindByIdAsync(System.Int64,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})')
+  - [FindByIdAsync(id,includeProperties)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindByIdAsync-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindByIdAsync(System.Int64,System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])')
+  - [FindByIdAsync(id,ignoreQueryFilters,includeProperties)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindByIdAsync-System-Int64,System-Boolean,System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindByIdAsync(System.Int64,System.Boolean,System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])')
+  - [FindByIdAsync(id,includeProperties)](#M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindByIdAsync-System-Int64,System-String[]- 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryReadConductor`1.FindByIdAsync(System.Int64,System.String[])')
 - [IRepositoryUpdateConductor\`1](#T-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryUpdateConductor`1 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryUpdateConductor`1')
   - [CommandTimeout](#P-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryUpdateConductor`1-CommandTimeout 'AndcultureCode.CSharp.Core.Interfaces.Conductors.IRepositoryUpdateConductor`1.CommandTimeout')
 - [IRepository\`1](#T-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1')
   - [CommandTimeout](#P-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-CommandTimeout 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.CommandTimeout')
-  - [BulkCreate(items,createdById)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-BulkCreate-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.BulkCreate(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
-  - [BulkCreateDistinct\`\`1(items,property,createdById,items,property,createdById)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-BulkCreateDistinct``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.BulkCreateDistinct``1(System.Collections.Generic.IEnumerable{`0},System.Func{`0,``0},System.Nullable{System.Int64})')
-  - [BulkDelete(items,deletedById,soft)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-BulkDelete-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.BulkDelete(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64},System.Boolean)')
-  - [BulkUpdate(entities,updatedBy)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-BulkUpdate-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.BulkUpdate(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
-  - [Create(item,createdById)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Create-`0,System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.Create(`0,System.Nullable{System.Int64})')
-  - [Create(items,createdById)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Create-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.Create(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
-  - [CreateDistinct\`\`1(items,property,createdById)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-CreateDistinct``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.CreateDistinct``1(System.Collections.Generic.IEnumerable{`0},System.Func{`0,``0},System.Nullable{System.Int64})')
-  - [Delete(id,deletedById,soft)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Delete-System-Int64,System-Nullable{System-Int64},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.Delete(System.Int64,System.Nullable{System.Int64},System.Boolean)')
-  - [Delete(o,deletedById,soft)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Delete-`0,System-Nullable{System-Int64},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.Delete(`0,System.Nullable{System.Int64},System.Boolean)')
-  - [Delete(items,deletedById,batchSize,soft)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Delete-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64},System-Int64,System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.Delete(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64},System.Int64,System.Boolean)')
-  - [FindAll(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindAll-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.FindAll(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Boolean)')
-  - [FindAll\`\`1(filter,orderBy,groupBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindAll``1-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.FindAll``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Boolean)')
-  - [FindAll\`\`2(filter,orderBy,groupBy,groupBySelector,includeProperties,skip,take,ignoreQueryFilters,asNoTracking)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindAll``2-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-Linq-Expressions-Expression{System-Func{``0,System-Collections-Generic-IEnumerable{`0},``1}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.FindAll``2(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{``0,System.Collections.Generic.IEnumerable{`0},``1}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Boolean)')
-  - [FindById(id,ignoreQueryFilters)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindById-System-Int64,System-Nullable{System-Boolean}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.FindById(System.Int64,System.Nullable{System.Boolean})')
-  - [FindById(id,filter)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindById-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.FindById(System.Int64,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})')
-  - [FindById(id,includeProperties)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindById-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.FindById(System.Int64,System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])')
-  - [FindById(id,ignoreQueryFilters,includeProperties)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindById-System-Int64,System-Nullable{System-Boolean},System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.FindById(System.Int64,System.Nullable{System.Boolean},System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])')
-  - [FindById(id,includeProperties)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindById-System-Int64,System-String[]- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.FindById(System.Int64,System.String[])')
-  - [Restore(o)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Restore-`0- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.Restore(`0)')
-  - [Restore(id)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Restore-System-Int64- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.Restore(System.Int64)')
-  - [Update(item,updatedBy)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Update-`0,System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.Update(`0,System.Nullable{System.Int64})')
-  - [Update(entities,updatedBy)](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Update-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IRepository`1.Update(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
 - [IResultExtensions](#T-AndcultureCode-CSharp-Core-Extensions-IResultExtensions 'AndcultureCode.CSharp.Core.Extensions.IResultExtensions')
   - [AddErrorAndLog\`\`1(result,logger,errorKey,errorMessage,resourceIdentifier)](#M-AndcultureCode-CSharp-Core-Extensions-IResultExtensions-AddErrorAndLog``1-AndcultureCode-CSharp-Core-Interfaces-IResult{``0},Microsoft-Extensions-Logging-ILogger,System-String,System-String,System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Extensions.IResultExtensions.AddErrorAndLog``1(AndcultureCode.CSharp.Core.Interfaces.IResult{``0},Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Nullable{System.Int64})')
   - [AddErrorAndLog\`\`1(result,logger,localizer,errorKey,arguments)](#M-AndcultureCode-CSharp-Core-Extensions-IResultExtensions-AddErrorAndLog``1-AndcultureCode-CSharp-Core-Interfaces-IResult{``0},Microsoft-Extensions-Logging-ILogger,Microsoft-Extensions-Localization-IStringLocalizer,System-String,System-Object[]- 'AndcultureCode.CSharp.Core.Extensions.IResultExtensions.AddErrorAndLog``1(AndcultureCode.CSharp.Core.Interfaces.IResult{``0},Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Localization.IStringLocalizer,System.String,System.Object[])')
@@ -318,6 +358,14 @@
   - [GetRemoteAccessDetails(relativeProviderPath,storageContainer,expiryTime,httpVerb,contentType)](#M-AndcultureCode-CSharp-Core-Interfaces-Providers-Storage-IStorageProvider-GetRemoteAccessDetails-System-String,System-String,System-Nullable{System-DateTimeOffset},AndcultureCode-CSharp-Core-Enumerations-HttpVerb,System-String- 'AndcultureCode.CSharp.Core.Interfaces.Providers.Storage.IStorageProvider.GetRemoteAccessDetails(System.String,System.String,System.Nullable{System.DateTimeOffset},AndcultureCode.CSharp.Core.Enumerations.HttpVerb,System.String)')
 - [IStringLocalizerExtensions](#T-AndcultureCode-CSharp-Core-Extensions-IStringLocalizerExtensions 'AndcultureCode.CSharp.Core.Extensions.IStringLocalizerExtensions')
   - [Default(localizer,key,arguments)](#M-AndcultureCode-CSharp-Core-Extensions-IStringLocalizerExtensions-Default-Microsoft-Extensions-Localization-IStringLocalizer,System-String,System-Object[]- 'AndcultureCode.CSharp.Core.Extensions.IStringLocalizerExtensions.Default(Microsoft.Extensions.Localization.IStringLocalizer,System.String,System.Object[])')
+- [IUpdateRepository\`1](#T-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1 'AndcultureCode.CSharp.Core.Interfaces.Data.IUpdateRepository`1')
+  - [CommandTimeout](#P-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1-CommandTimeout 'AndcultureCode.CSharp.Core.Interfaces.Data.IUpdateRepository`1.CommandTimeout')
+  - [BulkUpdate()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1-BulkUpdate-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IUpdateRepository`1.BulkUpdate(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
+  - [BulkUpdateAsync()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1-BulkUpdateAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IUpdateRepository`1.BulkUpdateAsync(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
+  - [Update()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1-Update-`0,System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IUpdateRepository`1.Update(`0,System.Nullable{System.Int64})')
+  - [Update()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1-Update-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IUpdateRepository`1.Update(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
+  - [UpdateAsync()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1-UpdateAsync-`0,System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IUpdateRepository`1.UpdateAsync(`0,System.Nullable{System.Int64})')
+  - [UpdateAsync()](#M-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1-UpdateAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}- 'AndcultureCode.CSharp.Core.Interfaces.Data.IUpdateRepository`1.UpdateAsync(System.Collections.Generic.IEnumerable{`0},System.Nullable{System.Int64})')
 - [IUser](#T-AndcultureCode-CSharp-Core-Interfaces-Entity-IUser 'AndcultureCode.CSharp.Core.Interfaces.Entity.IUser')
   - [Email](#P-AndcultureCode-CSharp-Core-Interfaces-Entity-IUser-Email 'AndcultureCode.CSharp.Core.Interfaces.Entity.IUser.Email')
   - [FirstName](#P-AndcultureCode-CSharp-Core-Interfaces-Entity-IUser-FirstName 'AndcultureCode.CSharp.Core.Interfaces.Entity.IUser.FirstName')
@@ -2372,6 +2420,142 @@ Single flattened string representation for the connection
 
 This method has no parameters.
 
+<a name='T-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1'></a>
+## ICreateRepository\`1 `type`
+
+##### Namespace
+
+AndcultureCode.CSharp.Core.Interfaces.Data
+
+##### Summary
+
+Handles creating `T` data
+
+<a name='P-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-CommandTimeout'></a>
+### CommandTimeout `property`
+
+##### Summary
+
+Ability to set and get the underlying DbContext's command timeout
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-BulkCreate-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}-'></a>
+### BulkCreate() `method`
+
+##### Summary
+
+Perform a DbContext.BulkInsert on an enumeration of T within a single transaction
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-BulkCreateAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}-'></a>
+### BulkCreateAsync() `method`
+
+##### Summary
+
+Perform a DbContext.BulkInsert on an enumeration of T within a single transaction
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-BulkCreateDistinctAsync``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}-'></a>
+### BulkCreateDistinctAsync\`\`1() `method`
+
+##### Summary
+
+Calls BulkCreate() with a de-duped list of objects as determined by the
+property (or properties) of the object for the 'property' argument
+NOTE: Bulking is generally faster than batching, but locks the table.
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-BulkCreateDistinct``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}-'></a>
+### BulkCreateDistinct\`\`1() `method`
+
+##### Summary
+
+Calls BulkCreate() with a de-duped list of objects as determined by the
+property (or properties) of the object for the 'property' argument
+NOTE: Bulking is generally faster than batching, but locks the table.
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-Create-`0,System-Nullable{System-Int64}-'></a>
+### Create() `method`
+
+##### Summary
+
+Ability to create an entity
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-Create-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}-'></a>
+### Create() `method`
+
+##### Summary
+
+Ability to create entities individually using a list
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-CreateAsync-`0,System-Nullable{System-Int64}-'></a>
+### CreateAsync() `method`
+
+##### Summary
+
+Ability to create an entity
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-CreateAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}-'></a>
+### CreateAsync() `method`
+
+##### Summary
+
+Ability to create entities individually using a list
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-CreateDistinctAsync``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}-'></a>
+### CreateDistinctAsync\`\`1() `method`
+
+##### Summary
+
+Calls batched overload of Create() with a de-duped list of objects as determined by the
+property (or properties) of the object for the 'property' argument.
+NOTE: Batching is generally slower than bulking, but does not lock the table.
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-ICreateRepository`1-CreateDistinct``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}-'></a>
+### CreateDistinct\`\`1() `method`
+
+##### Summary
+
+Calls batched overload of Create() with a de-duped list of objects as determined by the
+property (or properties) of the object for the 'property' argument.
+NOTE: Batching is generally slower than bulking, but does not lock the table.
+
+##### Parameters
+
+This method has no parameters.
+
 <a name='T-AndcultureCode-CSharp-Core-Interfaces-ICulture'></a>
 ## ICulture `type`
 
@@ -2513,6 +2697,170 @@ TODO https://github.com/AndcultureCode/AndcultureCode.CSharp.Core/issues/37
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | cultures | [System.Collections.Generic.IEnumerable{AndcultureCode.CSharp.Core.Interfaces.ICulture}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable{AndcultureCode.CSharp.Core.Interfaces.ICulture}') |  |
+
+<a name='T-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1'></a>
+## IDeleteRepository\`1 `type`
+
+##### Namespace
+
+AndcultureCode.CSharp.Core.Interfaces.Data
+
+##### Summary
+
+Repository for deleting `T` data
+
+<a name='P-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-CommandTimeout'></a>
+### CommandTimeout `property`
+
+##### Summary
+
+Ability to set and get the underlying DbContext's command timeout
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-BulkDelete-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64},System-Boolean-'></a>
+### BulkDelete() `method`
+
+##### Summary
+
+Calls BulkDelete() with a de-duped list of objects as determined by the
+property (or properties) of the object for the 'property' argument
+NOTE: Bulking is generally faster than batching, but locks the table.
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-BulkDeleteAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64},System-Boolean-'></a>
+### BulkDeleteAsync() `method`
+
+##### Summary
+
+Calls BulkDelete() with a de-duped list of objects as determined by the
+property (or properties) of the object for the 'property' argument
+NOTE: Bulking is generally faster than batching, but locks the table.
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-Delete-System-Int64,System-Nullable{System-Int64},System-Boolean-'></a>
+### Delete() `method`
+
+##### Summary
+
+Ability to delete an entity using an Id
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-Delete-`0,System-Nullable{System-Int64},System-Boolean-'></a>
+### Delete() `method`
+
+##### Summary
+
+Ability to delete an entity using the entity itself
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-Delete-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64},System-Int64,System-Boolean-'></a>
+### Delete(items,deletedById,batchSize,soft) `method`
+
+##### Summary
+
+Ability to delete a list of entities by batch size.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| items | [System.Collections.Generic.IEnumerable{\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable{`0}') | List of items to delete |
+| deletedById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') | Id of user deleting the items |
+| batchSize | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | Number of items to include in a batch, defaults to 100 |
+| soft | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Boolean flag for soft-deleting the items |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-DeleteAsync-System-Int64,System-Nullable{System-Int64},System-Boolean-'></a>
+### DeleteAsync() `method`
+
+##### Summary
+
+Ability to delete an entity using an Id
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-DeleteAsync-`0,System-Nullable{System-Int64},System-Boolean-'></a>
+### DeleteAsync() `method`
+
+##### Summary
+
+Ability to delete an entity using the entity itself
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-DeleteAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64},System-Int64,System-Boolean-'></a>
+### DeleteAsync(items,deletedById,batchSize,soft) `method`
+
+##### Summary
+
+Ability to delete a list of entities by batch size.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| items | [System.Collections.Generic.IEnumerable{\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable{`0}') | List of items to delete |
+| deletedById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') | Id of user deleting the items |
+| batchSize | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | Number of items to include in a batch, defaults to 100 |
+| soft | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Boolean flag for soft-deleting the items |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-Restore-`0-'></a>
+### Restore() `method`
+
+##### Summary
+
+Ability to restore a soft-deleted entity using the entity itself.
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-Restore-System-Int64-'></a>
+### Restore() `method`
+
+##### Summary
+
+Ability to restore a soft-deleted entity using the entity id.
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-RestoreAsync-`0-'></a>
+### RestoreAsync() `method`
+
+##### Summary
+
+Ability to restore a soft-deleted entity using the entity itself.
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IDeleteRepository`1-RestoreAsync-System-Int64-'></a>
+### RestoreAsync() `method`
+
+##### Summary
+
+Ability to restore a soft-deleted entity using the entity id.
+
+##### Parameters
+
+This method has no parameters.
 
 <a name='T-AndcultureCode-CSharp-Core-Extensions-IDistributedCacheExtensions'></a>
 ## IDistributedCacheExtensions `type`
@@ -2836,6 +3184,366 @@ Specify whether the provider has been implemented
 
 Name of the provider
 
+<a name='T-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1'></a>
+## IReadRepository\`1 `type`
+
+##### Namespace
+
+AndcultureCode.CSharp.Core.Interfaces.Data
+
+##### Summary
+
+Repository for reading `T` data
+
+<a name='P-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-CommandTimeout'></a>
+### CommandTimeout `property`
+
+##### Summary
+
+Ability to set and get the underlying DbContext's command timeout
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAll-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean-'></a>
+### FindAll(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking) `method`
+
+##### Summary
+
+Find all filtered, sorted and paged
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
+| orderBy | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') | Properties that should be used for sorting. |
+| includeProperties | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | Navigation properties that should be included. |
+| skip | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities that should be skipped. |
+| take | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities per page. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+| asNoTracking | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Ignore change tracking on the result. Set
+
+```
+true
+```
+
+for read-only operations. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAllAsync-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean-'></a>
+### FindAllAsync(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking) `method`
+
+##### Summary
+
+Find all filtered, sorted and paged
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
+| orderBy | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') | Properties that should be used for sorting. |
+| includeProperties | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | Navigation properties that should be included. |
+| skip | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities that should be skipped. |
+| take | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities per page. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+| asNoTracking | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Ignore change tracking on the result. Set
+
+```
+true
+```
+
+for read-only operations. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAllAsync``1-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean-'></a>
+### FindAllAsync\`\`1(filter,orderBy,groupBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking) `method`
+
+##### Summary
+
+Configure lazy loaded queryable, given provided parameters, to load a list of `T` grouped by a `TKey`
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
+| orderBy | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') | Properties that should be used for sorting. |
+| groupBy | [System.Linq.Expressions.Expression{System.Func{\`0,\`\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,``0}}') | Filter to be used for grouping by `TKey` of `T` . |
+| includeProperties | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | Navigation properties that should be included. |
+| skip | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities that should be skipped. |
+| take | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities per page. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+| asNoTracking | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Ignore change tracking on the result. Set
+
+```
+true
+```
+
+for read-only operations. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAllAsync``2-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-Linq-Expressions-Expression{System-Func{``0,System-Collections-Generic-IEnumerable{`0},``1}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean-'></a>
+### FindAllAsync\`\`2(filter,orderBy,groupBy,groupBySelector,includeProperties,skip,take,ignoreQueryFilters,asNoTracking) `method`
+
+##### Summary
+
+Configure lazy loaded queryable, given provided parameters, to load a list of `T`
+grouped by a `TKey` and selected by groupBySelector tranformed into `TResult`
+ref to: https://docs.microsoft.com/en-us/dotnet/api/system.linq.queryable.groupby?view=netcore-3.1#System_Linq_Queryable_GroupBy__3_System_Linq_IQueryable___0__System_Linq_Expressions_Expression_System_Func___0___1___System_Linq_Expressions_Expression_System_Func___1_System_Collections_Generic_IEnumerable___0____2___
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
+| orderBy | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') | Properties that should be used for sorting. |
+| groupBy | [System.Linq.Expressions.Expression{System.Func{\`0,\`\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,``0}}') | Filter to be used for grouping by `TKey` of `T` . |
+| groupBySelector | [System.Linq.Expressions.Expression{System.Func{\`\`0,System.Collections.Generic.IEnumerable{\`0},\`\`1}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{``0,System.Collections.Generic.IEnumerable{`0},``1}}') | Selector to be used on groupBy used to create a result of `TResult` value from each group. |
+| includeProperties | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | Navigation properties that should be included. |
+| skip | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities that should be skipped. |
+| take | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities per page. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+| asNoTracking | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Ignore change tracking on the result. Set
+
+```
+true
+```
+
+for read-only operations. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAllCommitted-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean}-'></a>
+### FindAllCommitted(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters) `method`
+
+##### Summary
+
+Find all filtered, sorted and paged and converts to an IList `T`
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
+| orderBy | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') | Properties that should be used for sorting. |
+| includeProperties | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | Navigation properties that should be included. |
+| skip | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities that should be skipped. |
+| take | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities per page. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAllCommittedAsync-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean}-'></a>
+### FindAllCommittedAsync(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters) `method`
+
+##### Summary
+
+Find all filtered, sorted and paged and converts to an IList `T`
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
+| orderBy | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') | Properties that should be used for sorting. |
+| includeProperties | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | Navigation properties that should be included. |
+| skip | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities that should be skipped. |
+| take | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities per page. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAll``1-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean-'></a>
+### FindAll\`\`1(filter,orderBy,groupBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking) `method`
+
+##### Summary
+
+Configure lazy loaded queryable, given provided parameters, to load a list of `T` grouped by a `TKey`
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
+| orderBy | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') | Properties that should be used for sorting. |
+| groupBy | [System.Linq.Expressions.Expression{System.Func{\`0,\`\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,``0}}') | Filter to be used for grouping by `TKey` of `T` . |
+| includeProperties | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | Navigation properties that should be included. |
+| skip | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities that should be skipped. |
+| take | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities per page. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+| asNoTracking | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Ignore change tracking on the result. Set
+
+```
+true
+```
+
+for read-only operations. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindAll``2-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-Linq-Expressions-Expression{System-Func{``0,System-Collections-Generic-IEnumerable{`0},``1}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean-'></a>
+### FindAll\`\`2(filter,orderBy,groupBy,groupBySelector,includeProperties,skip,take,ignoreQueryFilters,asNoTracking) `method`
+
+##### Summary
+
+Configure lazy loaded queryable, given provided parameters, to load a list of `T`
+grouped by a `TKey` and selected by groupBySelector tranformed into `TResult`
+ref to: https://docs.microsoft.com/en-us/dotnet/api/system.linq.queryable.groupby?view=netcore-3.1#System_Linq_Queryable_GroupBy__3_System_Linq_IQueryable___0__System_Linq_Expressions_Expression_System_Func___0___1___System_Linq_Expressions_Expression_System_Func___1_System_Collections_Generic_IEnumerable___0____2___
+
+##### Returns
+
+
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
+| orderBy | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') | Properties that should be used for sorting. |
+| groupBy | [System.Linq.Expressions.Expression{System.Func{\`0,\`\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,``0}}') | Filter to be used for grouping by `TKey` of `T` . |
+| groupBySelector | [System.Linq.Expressions.Expression{System.Func{\`\`0,System.Collections.Generic.IEnumerable{\`0},\`\`1}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{``0,System.Collections.Generic.IEnumerable{`0},``1}}') | Selector to be used on groupBy used to create a result of `TResult` value from each group. |
+| includeProperties | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | Navigation properties that should be included. |
+| skip | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities that should be skipped. |
+| take | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities per page. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+| asNoTracking | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Ignore change tracking on the result. Set
+
+```
+true
+```
+
+for read-only operations. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindById-System-Int64,System-Nullable{System-Boolean}-'></a>
+### FindById(id,ignoreQueryFilters) `method`
+
+##### Summary
+
+Finds an entity by its Id.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindById-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}}-'></a>
+### FindById(id,filter) `method`
+
+##### Summary
+
+Finds an entity by its Id that also matches a filter.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
+| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindById-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]-'></a>
+### FindById(id,includeProperties) `method`
+
+##### Summary
+
+Finds an entity by its Id.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
+| includeProperties | [System.Linq.Expressions.Expression{System.Func{\`0,System.Object}}[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[]') | Navigation properties that should be included. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindById-System-Int64,System-Nullable{System-Boolean},System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]-'></a>
+### FindById(id,ignoreQueryFilters,includeProperties) `method`
+
+##### Summary
+
+Finds an entity by its Id.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+| includeProperties | [System.Linq.Expressions.Expression{System.Func{\`0,System.Object}}[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[]') | Navigation properties that should be included. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindById-System-Int64,System-String[]-'></a>
+### FindById(id,includeProperties) `method`
+
+##### Summary
+
+Finds an entity by its Id.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
+| includeProperties | [System.String[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String[] 'System.String[]') | Navigation properties that should be included. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindByIdAsync-System-Int64,System-Nullable{System-Boolean}-'></a>
+### FindByIdAsync(id,ignoreQueryFilters) `method`
+
+##### Summary
+
+Finds an entity by its Id.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindByIdAsync-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}}-'></a>
+### FindByIdAsync(id,filter) `method`
+
+##### Summary
+
+Finds an entity by its Id that also matches a filter.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
+| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindByIdAsync-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]-'></a>
+### FindByIdAsync(id,includeProperties) `method`
+
+##### Summary
+
+Finds an entity by its Id.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
+| includeProperties | [System.Linq.Expressions.Expression{System.Func{\`0,System.Object}}[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[]') | Navigation properties that should be included. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindByIdAsync-System-Int64,System-Nullable{System-Boolean},System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]-'></a>
+### FindByIdAsync(id,ignoreQueryFilters,includeProperties) `method`
+
+##### Summary
+
+Finds an entity by its Id.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+| includeProperties | [System.Linq.Expressions.Expression{System.Func{\`0,System.Object}}[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[]') | Navigation properties that should be included. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IReadRepository`1-FindByIdAsync-System-Int64,System-String[]-'></a>
+### FindByIdAsync(id,includeProperties) `method`
+
+##### Summary
+
+Finds an entity by its Id.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
+| includeProperties | [System.String[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String[] 'System.String[]') | Navigation properties that should be included. |
+
 <a name='T-AndcultureCode-CSharp-Core-Interfaces-Providers-Storage-IRemoteAccessDetails'></a>
 ## IRemoteAccessDetails `type`
 
@@ -2879,6 +3587,17 @@ Automatically determines if the supplied entity needs created or updated.
 
 This method has no parameters.
 
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryConductor`1-BulkCreateOrUpdateAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}-'></a>
+### BulkCreateOrUpdateAsync() `method`
+
+##### Summary
+
+Automatically determines if the supplied entity needs created or updated.
+
+##### Parameters
+
+This method has no parameters.
+
 <a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryConductor`1-CreateOrUpdate-`0,System-Nullable{System-Int64}-'></a>
 ### CreateOrUpdate() `method`
 
@@ -2891,22 +3610,37 @@ Automatically determines if the supplied entity needs created or updated.
 This method has no parameters.
 
 <a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryConductor`1-CreateOrUpdate-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}-'></a>
-### CreateOrUpdate(items,createdOrUpdatedById) `method`
+### CreateOrUpdate() `method`
 
 ##### Summary
 
 Automatically determines if the supplied entities need created or updated.
 
-##### Returns
+##### Parameters
 
+This method has no parameters.
 
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryConductor`1-CreateOrUpdateAsync-`0,System-Nullable{System-Int64}-'></a>
+### CreateOrUpdateAsync() `method`
+
+##### Summary
+
+Automatically determines if the supplied entity needs created or updated.
 
 ##### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| items | [System.Collections.Generic.IEnumerable{\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable{`0}') |  |
-| createdOrUpdatedById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') |  |
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryConductor`1-CreateOrUpdateAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}-'></a>
+### CreateOrUpdateAsync() `method`
+
+##### Summary
+
+Automatically determines if the supplied entities need created or updated.
+
+##### Parameters
+
+This method has no parameters.
 
 <a name='T-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryCreateConductor`1'></a>
 ## IRepositoryCreateConductor\`1 `type`
@@ -2922,18 +3656,14 @@ AndcultureCode.CSharp.Core.Interfaces.Conductors
 
 Ability to set and get the underlying DbContext's command timeout
 
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryCreateConductor`1-BulkCreateDistinct``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}-'></a>
-### BulkCreateDistinct\`\`1(items,property,createdById) `method`
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryCreateConductor`1-BulkCreateDistinctAsync``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}-'></a>
+### BulkCreateDistinctAsync\`\`1(items,property,createdById) `method`
 
 ##### Summary
 
 Calls BulkCreate() with a de-duped list of objects as determined by the
 property (or properties) of the object for the 'property' argument
 NOTE: Bulking is generally faster than batching, but locks the table.
-
-##### Returns
-
-
 
 ##### Parameters
 
@@ -2943,11 +3673,39 @@ NOTE: Bulking is generally faster than batching, but locks the table.
 | property | [System.Func{\`0,\`\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{`0,``0}') | Property or properties of the typed object to determine distinctness |
 | createdById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') | Id of the user creating the entity |
 
-##### Generic Types
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryCreateConductor`1-BulkCreateDistinct``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}-'></a>
+### BulkCreateDistinct\`\`1(items,property,createdById) `method`
 
-| Name | Description |
-| ---- | ----------- |
-| TKey |  |
+##### Summary
+
+Calls BulkCreate() with a de-duped list of objects as determined by the
+property (or properties) of the object for the 'property' argument
+NOTE: Bulking is generally faster than batching, but locks the table.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| items | [System.Collections.Generic.IEnumerable{\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable{`0}') | List of items to attempt to create |
+| property | [System.Func{\`0,\`\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{`0,``0}') | Property or properties of the typed object to determine distinctness |
+| createdById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') | Id of the user creating the entity |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryCreateConductor`1-CreateDistinctAsync``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}-'></a>
+### CreateDistinctAsync\`\`1(items,property,createdById) `method`
+
+##### Summary
+
+Calls batched overload of Create() with a de-duped list of objects as determined by the
+property (or properties) of the object for the 'property' argument.
+NOTE: Batching is generally slower than bulking, but does not lock the table.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| items | [System.Collections.Generic.IEnumerable{\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable{`0}') | List of items to attempt to create |
+| property | [System.Func{\`0,\`\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{`0,``0}') | Property or properties of the typed object to determine distinctness |
+| createdById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') | Id of the user creating the entity |
 
 <a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryCreateConductor`1-CreateDistinct``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}-'></a>
 ### CreateDistinct\`\`1(items,property,createdById) `method`
@@ -2958,10 +3716,6 @@ Calls batched overload of Create() with a de-duped list of objects as determined
 property (or properties) of the object for the 'property' argument.
 NOTE: Batching is generally slower than bulking, but does not lock the table.
 
-##### Returns
-
-
-
 ##### Parameters
 
 | Name | Type | Description |
@@ -2969,12 +3723,6 @@ NOTE: Batching is generally slower than bulking, but does not lock the table.
 | items | [System.Collections.Generic.IEnumerable{\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable{`0}') | List of items to attempt to create |
 | property | [System.Func{\`0,\`\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{`0,``0}') | Property or properties of the typed object to determine distinctness |
 | createdById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') | Id of the user creating the entity |
-
-##### Generic Types
-
-| Name | Description |
-| ---- | ----------- |
-| TKey |  |
 
 <a name='T-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryDeleteConductor`1'></a>
 ## IRepositoryDeleteConductor\`1 `type`
@@ -3071,6 +3819,126 @@ true
 
 for read-only operations. |
 
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllAsync-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean-'></a>
+### FindAllAsync(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking) `method`
+
+##### Summary
+
+Configure lazy loaded queryable, given provided parameters, to load a list of `T`
+
+##### Returns
+
+
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
+| orderBy | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') | Properties that should be used for sorting. |
+| includeProperties | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | Navigation properties that should be included. |
+| skip | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities that should be skipped. |
+| take | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities per page. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+| asNoTracking | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Ignore change tracking on the result. Set
+
+```
+true
+```
+
+for read-only operations. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllAsync-System-Collections-Generic-Dictionary{System-String,System-String},System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Nullable{System-Boolean},System-Boolean-'></a>
+### FindAllAsync(filter,orderBy,nextLinkParams,ignoreQueryFilters,asNoTracking) `method`
+
+##### Summary
+
+Alternative FindAll for retrieving records using NextLinkParams in place of traditional
+determinate pagination mechanisms, such as; skip and take.
+
+##### Returns
+
+
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| filter | [System.Collections.Generic.Dictionary{System.String,System.String}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.Dictionary 'System.Collections.Generic.Dictionary{System.String,System.String}') | Filter to be used for querying. |
+| orderBy | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Properties that should be used for sorting. |
+| nextLinkParams | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') |  |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+| asNoTracking | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Ignore change tracking on the result. Set
+
+```
+true
+```
+
+for read-only operations. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllAsync``1-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean-'></a>
+### FindAllAsync\`\`1(filter,orderBy,groupBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking) `method`
+
+##### Summary
+
+Configure lazy loaded queryable, given provided parameters, to load a list of `T` grouped by a `TKey`
+
+##### Returns
+
+
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
+| orderBy | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') | Properties that should be used for sorting. |
+| groupBy | [System.Linq.Expressions.Expression{System.Func{\`0,\`\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,``0}}') | Filter to be used for grouping by `TKey` of `T` . |
+| includeProperties | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | Navigation properties that should be included. |
+| skip | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities that should be skipped. |
+| take | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities per page. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+| asNoTracking | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Ignore change tracking on the result. Set
+
+```
+true
+```
+
+for read-only operations. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllAsync``2-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-Linq-Expressions-Expression{System-Func{``0,System-Collections-Generic-IEnumerable{`0},``1}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean-'></a>
+### FindAllAsync\`\`2(filter,orderBy,groupBy,groupBySelector,includeProperties,skip,take,ignoreQueryFilters,asNoTracking) `method`
+
+##### Summary
+
+Configure lazy loaded queryable, given provided parameters, to load a list of `T`
+grouped by a `TKey` and selected by groupBySelector tranformed into `TResult`
+ref to microsoft docs: https://shorturl.at/jptP3
+
+##### Returns
+
+
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
+| orderBy | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') | Properties that should be used for sorting. |
+| groupBy | [System.Linq.Expressions.Expression{System.Func{\`0,\`\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,``0}}') | Filter to be used for grouping by `TKey` of `T` . |
+| groupBySelector | [System.Linq.Expressions.Expression{System.Func{\`\`0,System.Collections.Generic.IEnumerable{\`0},\`\`1}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{``0,System.Collections.Generic.IEnumerable{`0},``1}}') | Selector to be used on groupBy used to create a result of `TResult` value from each group. |
+| includeProperties | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | Navigation properties that should be included. |
+| skip | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities that should be skipped. |
+| take | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities per page. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+| asNoTracking | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Ignore change tracking on the result. Set
+
+```
+true
+```
+
+for read-only operations. |
+
 <a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllCommitted-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean}-'></a>
 ### FindAllCommitted(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters) `method`
 
@@ -3097,6 +3965,51 @@ fields need to be executed (committed) inside the conductor.
 
 <a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllCommitted-System-Collections-Generic-Dictionary{System-String,System-String},System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Nullable{System-Boolean}-'></a>
 ### FindAllCommitted(filter,orderBy,nextLinkParams,ignoreQueryFilters) `method`
+
+##### Summary
+
+Alternative FindAll for retrieving records using NextLinkParams in place of traditional
+determinate pagination mechanisms, such as; skip and take.
+
+##### Returns
+
+
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| filter | [System.Collections.Generic.Dictionary{System.String,System.String}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.Dictionary 'System.Collections.Generic.Dictionary{System.String,System.String}') | Filter to be used for querying. |
+| orderBy | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Properties that should be used for sorting. |
+| nextLinkParams | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') |  |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllCommittedAsync-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean}-'></a>
+### FindAllCommittedAsync(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters) `method`
+
+##### Summary
+
+Similar to FindAll, this evaluates the parameters as given. The big difference here is that the query is executed
+inside the conductor and a List`T` is returned and NOT Queryable`T`.  This is primary used in cases where calculated
+fields need to be executed (committed) inside the conductor.
+
+##### Returns
+
+
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
+| orderBy | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') | Properties that should be used for sorting. |
+| includeProperties | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | Navigation properties that should be included. |
+| skip | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities that should be skipped. |
+| take | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities per page. |
+| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindAllCommittedAsync-System-Collections-Generic-Dictionary{System-String,System-String},System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Nullable{System-Boolean}-'></a>
+### FindAllCommittedAsync(filter,orderBy,nextLinkParams,ignoreQueryFilters) `method`
 
 ##### Summary
 
@@ -3205,7 +4118,7 @@ Finds an entity by its Id that also matches a filter.
 
 ##### Returns
 
-The entity witht he provided identity value and filter condition met.
+The entity with he provided identity value and filter condition met.
 
 ##### Parameters
 
@@ -3269,6 +4182,96 @@ The entity with the provided identity value.
 | id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
 | includeProperties | [System.String[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String[] 'System.String[]') | Navigation properties that should be included. |
 
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindByIdAsync-System-Int64-'></a>
+### FindByIdAsync(id) `method`
+
+##### Summary
+
+Finds an entity by its Id.
+
+##### Returns
+
+The entity with the provided identity value.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindByIdAsync-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}}-'></a>
+### FindByIdAsync(id,filter) `method`
+
+##### Summary
+
+Finds an entity by its Id that also matches a filter.
+
+##### Returns
+
+The entity with he provided identity value and filter condition met.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
+| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindByIdAsync-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]-'></a>
+### FindByIdAsync(id,includeProperties) `method`
+
+##### Summary
+
+Finds an entity by its Id.
+
+##### Returns
+
+The entity with the provided identity value.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
+| includeProperties | [System.Linq.Expressions.Expression{System.Func{\`0,System.Object}}[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[]') | Navigation properties that should be included. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindByIdAsync-System-Int64,System-Boolean,System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]-'></a>
+### FindByIdAsync(id,ignoreQueryFilters,includeProperties) `method`
+
+##### Summary
+
+Finds an entity by its Id.
+
+##### Returns
+
+The entity with the provided identity value.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
+| ignoreQueryFilters | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | If true, global query filters will be ignored for this query. |
+| includeProperties | [System.Linq.Expressions.Expression{System.Func{\`0,System.Object}}[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[]') | Navigation properties that should be included. |
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryReadConductor`1-FindByIdAsync-System-Int64,System-String[]-'></a>
+### FindByIdAsync(id,includeProperties) `method`
+
+##### Summary
+
+Finds an entity by its Id.
+
+##### Returns
+
+The entity with the provided identity value.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
+| includeProperties | [System.String[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String[] 'System.String[]') | Navigation properties that should be included. |
+
 <a name='T-AndcultureCode-CSharp-Core-Interfaces-Conductors-IRepositoryUpdateConductor`1'></a>
 ## IRepositoryUpdateConductor\`1 `type`
 
@@ -3292,13 +4295,7 @@ AndcultureCode.CSharp.Core.Interfaces.Data
 
 ##### Summary
 
-
-
-##### Generic Types
-
-| Name | Description |
-| ---- | ----------- |
-| T |  |
+Handles CRUD of `T` data
 
 <a name='P-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-CommandTimeout'></a>
 ### CommandTimeout `property`
@@ -3306,460 +4303,6 @@ AndcultureCode.CSharp.Core.Interfaces.Data
 ##### Summary
 
 Ability to set and get the underlying DbContext's command timeout
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-BulkCreate-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}-'></a>
-### BulkCreate(items,createdById) `method`
-
-##### Summary
-
-Perform a DbContext.BulkInsert on an enumeration of T within a single transaction
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| items | [System.Collections.Generic.IEnumerable{\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable{`0}') |  |
-| createdById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') |  |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-BulkCreateDistinct``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}-'></a>
-### BulkCreateDistinct\`\`1(items,property,createdById,items,property,createdById) `method`
-
-##### Summary
-
-Calls BulkCreate() with a de-duped list of objects as determined by the
-property (or properties) of the object for the 'property' argument
-NOTE: Bulking is generally faster than batching, but locks the table.
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| items | [System.Collections.Generic.IEnumerable{\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable{`0}') | List of items to attempt to create |
-| property | [System.Func{\`0,\`\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{`0,``0}') | Property or properties of the typed object to determine distinctness |
-| createdById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') | Id of the user creating the entity |
-
-##### Generic Types
-
-| Name | Description |
-| ---- | ----------- |
-| TKey |  |
-| TKey |  |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-BulkDelete-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64},System-Boolean-'></a>
-### BulkDelete(items,deletedById,soft) `method`
-
-##### Summary
-
-Calls BulkDelete() with a de-duped list of objects as determined by the
-property (or properties) of the object for the 'property' argument
-NOTE: Bulking is generally faster than batching, but locks the table.
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| items | [System.Collections.Generic.IEnumerable{\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable{`0}') |  |
-| deletedById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') |  |
-| soft | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') |  |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-BulkUpdate-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}-'></a>
-### BulkUpdate(entities,updatedBy) `method`
-
-##### Summary
-
-Ability to update a list of entities in a single bulk operation.
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| entities | [System.Collections.Generic.IEnumerable{\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable{`0}') | List of items to update |
-| updatedBy | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') | Id of user updating the entity |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Create-`0,System-Nullable{System-Int64}-'></a>
-### Create(item,createdById) `method`
-
-##### Summary
-
-Ability to create an entity
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| item | [\`0](#T-`0 '`0') | Item to be created |
-| createdById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') | Id of user creating the item |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Create-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}-'></a>
-### Create(items,createdById) `method`
-
-##### Summary
-
-Ability to create entities individually using a list
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| items | [System.Collections.Generic.IEnumerable{\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable{`0}') | List of items to be created |
-| createdById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') | Id of user creating the items |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-CreateDistinct``1-System-Collections-Generic-IEnumerable{`0},System-Func{`0,``0},System-Nullable{System-Int64}-'></a>
-### CreateDistinct\`\`1(items,property,createdById) `method`
-
-##### Summary
-
-Calls batched overload of Create() with a de-duped list of objects as determined by the
-property (or properties) of the object for the 'property' argument.
-NOTE: Batching is generally slower than bulking, but does not lock the table.
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| items | [System.Collections.Generic.IEnumerable{\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable{`0}') | List of items to attempt to create |
-| property | [System.Func{\`0,\`\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{`0,``0}') | Property or properties of the typed object to determine distinctness |
-| createdById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') | Id of the user creating the entity |
-
-##### Generic Types
-
-| Name | Description |
-| ---- | ----------- |
-| TKey |  |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Delete-System-Int64,System-Nullable{System-Int64},System-Boolean-'></a>
-### Delete(id,deletedById,soft) `method`
-
-##### Summary
-
-Ability to delete an entity using an Id
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | Id of item to be deleted |
-| deletedById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') | Id of user deleting the item |
-| soft | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Boolean flag for soft-deleting the item |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Delete-`0,System-Nullable{System-Int64},System-Boolean-'></a>
-### Delete(o,deletedById,soft) `method`
-
-##### Summary
-
-Ability to delete an entity using the entity itself
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| o | [\`0](#T-`0 '`0') | Item to be deleted |
-| deletedById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') | Id of user deleting the item |
-| soft | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Boolean flag for soft-deleting the item |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Delete-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64},System-Int64,System-Boolean-'></a>
-### Delete(items,deletedById,batchSize,soft) `method`
-
-##### Summary
-
-Ability to delete a list of entities by batch size.
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| items | [System.Collections.Generic.IEnumerable{\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable{`0}') | List of items to delete |
-| deletedById | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') | Id of user deleting the items |
-| batchSize | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | Number of items to include in a batch, defaults to 100 |
-| soft | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Boolean flag for soft-deleting the items |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindAll-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean-'></a>
-### FindAll(filter,orderBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking) `method`
-
-##### Summary
-
-Find all filtered, sorted and paged
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') |  |
-| orderBy | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') |  |
-| includeProperties | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') |  |
-| skip | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') |  |
-| take | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') |  |
-| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') |  |
-| asNoTracking | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') |  |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindAll``1-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean-'></a>
-### FindAll\`\`1(filter,orderBy,groupBy,includeProperties,skip,take,ignoreQueryFilters,asNoTracking) `method`
-
-##### Summary
-
-Configure lazy loaded queryable, given provided parameters, to load a list of `T` grouped by a `TKey`
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
-| orderBy | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') | Properties that should be used for sorting. |
-| groupBy | [System.Linq.Expressions.Expression{System.Func{\`0,\`\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,``0}}') | Filter to be used for grouping by `TKey` of `T` . |
-| includeProperties | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | Navigation properties that should be included. |
-| skip | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities that should be skipped. |
-| take | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities per page. |
-| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
-| asNoTracking | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Ignore change tracking on the result. Set
-
-```
-true
-```
-
-for read-only operations. |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindAll``2-System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}},System-Func{System-Linq-IQueryable{`0},System-Linq-IOrderedQueryable{`0}},System-Linq-Expressions-Expression{System-Func{`0,``0}},System-Linq-Expressions-Expression{System-Func{``0,System-Collections-Generic-IEnumerable{`0},``1}},System-String,System-Nullable{System-Int32},System-Nullable{System-Int32},System-Nullable{System-Boolean},System-Boolean-'></a>
-### FindAll\`\`2(filter,orderBy,groupBy,groupBySelector,includeProperties,skip,take,ignoreQueryFilters,asNoTracking) `method`
-
-##### Summary
-
-Configure lazy loaded queryable, given provided parameters, to load a list of `T`
-grouped by a `TKey` and selected by groupBySelector tranformed into `TResult`
-ref to: https://docs.microsoft.com/en-us/dotnet/api/system.linq.queryable.groupby?view=netcore-3.1#System_Linq_Queryable_GroupBy__3_System_Linq_IQueryable___0__System_Linq_Expressions_Expression_System_Func___0___1___System_Linq_Expressions_Expression_System_Func___1_System_Collections_Generic_IEnumerable___0____2___
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
-| orderBy | [System.Func{System.Linq.IQueryable{\`0},System.Linq.IOrderedQueryable{\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Func 'System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}') | Properties that should be used for sorting. |
-| groupBy | [System.Linq.Expressions.Expression{System.Func{\`0,\`\`0}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,``0}}') | Filter to be used for grouping by `TKey` of `T` . |
-| groupBySelector | [System.Linq.Expressions.Expression{System.Func{\`\`0,System.Collections.Generic.IEnumerable{\`0},\`\`1}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{``0,System.Collections.Generic.IEnumerable{`0},``1}}') | Selector to be used on groupBy used to create a result of `TResult` value from each group. |
-| includeProperties | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | Navigation properties that should be included. |
-| skip | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities that should be skipped. |
-| take | [System.Nullable{System.Int32}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int32}') | Number of entities per page. |
-| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
-| asNoTracking | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Ignore change tracking on the result. Set
-
-```
-true
-```
-
-for read-only operations. |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindById-System-Int64,System-Nullable{System-Boolean}-'></a>
-### FindById(id,ignoreQueryFilters) `method`
-
-##### Summary
-
-Finds an entity by its Id.
-
-##### Returns
-
-The entity with the provided identity value.
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
-| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindById-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Boolean}}-'></a>
-### FindById(id,filter) `method`
-
-##### Summary
-
-Finds an entity by its Id that also matches a filter.
-
-##### Returns
-
-The entity witht he provided identity value and filter condition met.
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
-| filter | [System.Linq.Expressions.Expression{System.Func{\`0,System.Boolean}}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}') | Filter to be used for querying. |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindById-System-Int64,System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]-'></a>
-### FindById(id,includeProperties) `method`
-
-##### Summary
-
-Finds an entity by its Id.
-
-##### Returns
-
-The entity with the provided identity value.
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
-| includeProperties | [System.Linq.Expressions.Expression{System.Func{\`0,System.Object}}[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[]') | Navigation properties that should be included. |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindById-System-Int64,System-Nullable{System-Boolean},System-Linq-Expressions-Expression{System-Func{`0,System-Object}}[]-'></a>
-### FindById(id,ignoreQueryFilters,includeProperties) `method`
-
-##### Summary
-
-Finds an entity by its Id.
-
-##### Returns
-
-The entity with the provided identity value.
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
-| ignoreQueryFilters | [System.Nullable{System.Boolean}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Boolean}') | If true, global query filters will be ignored for this query. |
-| includeProperties | [System.Linq.Expressions.Expression{System.Func{\`0,System.Object}}[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Linq.Expressions.Expression 'System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[]') | Navigation properties that should be included. |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-FindById-System-Int64,System-String[]-'></a>
-### FindById(id,includeProperties) `method`
-
-##### Summary
-
-Finds an entity by its Id.
-
-##### Returns
-
-The entity with the provided identity value.
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | The entity identity value. |
-| includeProperties | [System.String[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String[] 'System.String[]') | Navigation properties that should be included. |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Restore-`0-'></a>
-### Restore(o) `method`
-
-##### Summary
-
-Ability to restore a soft-deleted entity using the entity itself.
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| o | [\`0](#T-`0 '`0') | Entity to be restored |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Restore-System-Int64-'></a>
-### Restore(id) `method`
-
-##### Summary
-
-Ability to restore a soft-deleted entity using the entity id.
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | [System.Int64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int64 'System.Int64') | Id of entity to be restored |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Update-`0,System-Nullable{System-Int64}-'></a>
-### Update(item,updatedBy) `method`
-
-##### Summary
-
-Ability to create or update an entity
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| item | [\`0](#T-`0 '`0') | Item to create or update |
-| updatedBy | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') | Id of user creating or updating the entity |
-
-<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IRepository`1-Update-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}-'></a>
-### Update(entities,updatedBy) `method`
-
-##### Summary
-
-Calls Update one-by-one for each item in the enumerated entities.
-For large operations, BulkUpdate() is more efficient.
-
-##### Returns
-
-True if entities updated without any exceptions. False if an exception was thrown.
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| entities | [System.Collections.Generic.IEnumerable{\`0}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable{`0}') |  |
-| updatedBy | [System.Nullable{System.Int64}](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Nullable 'System.Nullable{System.Int64}') |  |
 
 <a name='T-AndcultureCode-CSharp-Core-Extensions-IResultExtensions'></a>
 ## IResultExtensions `type`
@@ -4905,6 +5448,92 @@ Retrieve given translation for default configured culture
 | localizer | [Microsoft.Extensions.Localization.IStringLocalizer](#T-Microsoft-Extensions-Localization-IStringLocalizer 'Microsoft.Extensions.Localization.IStringLocalizer') |  |
 | key | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') |  |
 | arguments | [System.Object[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Object[] 'System.Object[]') | The values with which to format the translated error message |
+
+<a name='T-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1'></a>
+## IUpdateRepository\`1 `type`
+
+##### Namespace
+
+AndcultureCode.CSharp.Core.Interfaces.Data
+
+##### Summary
+
+Handles updating of `T` data
+
+<a name='P-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1-CommandTimeout'></a>
+### CommandTimeout `property`
+
+##### Summary
+
+Ability to set and get the underlying DbContext's command timeout
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1-BulkUpdate-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}-'></a>
+### BulkUpdate() `method`
+
+##### Summary
+
+Ability to update a list of entities in a single bulk operation.
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1-BulkUpdateAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}-'></a>
+### BulkUpdateAsync() `method`
+
+##### Summary
+
+Ability to update a list of entities in a single bulk operation.
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1-Update-`0,System-Nullable{System-Int64}-'></a>
+### Update() `method`
+
+##### Summary
+
+Ability to create or update an entity
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1-Update-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}-'></a>
+### Update() `method`
+
+##### Summary
+
+Calls Update one-by-one for each item in the enumerated entities.
+For large operations, BulkUpdate() is more efficient.
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1-UpdateAsync-`0,System-Nullable{System-Int64}-'></a>
+### UpdateAsync() `method`
+
+##### Summary
+
+Ability to create or update an entity
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-AndcultureCode-CSharp-Core-Interfaces-Data-IUpdateRepository`1-UpdateAsync-System-Collections-Generic-IEnumerable{`0},System-Nullable{System-Int64}-'></a>
+### UpdateAsync() `method`
+
+##### Summary
+
+Calls Update one-by-one for each item in the enumerated entities.
+For large operations, BulkUpdate() is more efficient.
+
+##### Parameters
+
+This method has no parameters.
 
 <a name='T-AndcultureCode-CSharp-Core-Interfaces-Entity-IUser'></a>
 ## IUser `type`

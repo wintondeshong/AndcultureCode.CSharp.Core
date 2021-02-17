@@ -12,6 +12,17 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Data
     /// </summary>
     public interface IReadRepository<T> where T : class, IEntity
     {
+        #region Properties
+
+        /// <summary>
+        /// Ability to set and get the underlying DbContext's command timeout
+        /// </summary>
+        int? CommandTimeout { get; set; }
+
+        #endregion Properties
+
+        #region Methods
+
         #region FindAll
 
         /// <summary>
@@ -280,5 +291,7 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Data
         Task<IResult<T>> FindByIdAsync(long id, params string[] includeProperties);
 
         #endregion FindByIdAsync
+
+        #endregion Methods
     }
 }

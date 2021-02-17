@@ -9,6 +9,17 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Data
     /// </summary>
     public interface IDeleteRepository<T> where T : class, IEntity
     {
+        #region Properties
+
+        /// <summary>
+        /// Ability to set and get the underlying DbContext's command timeout
+        /// </summary>
+        int? CommandTimeout { get; set; }
+
+        #endregion Properties
+
+        #region Methods
+
         #region BulkDelete
 
         /// <summary>
@@ -76,5 +87,35 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Data
         Task<IResult<bool>> DeleteAsync(IEnumerable<T> items, long? deletedById = null, long batchSize = 100, bool soft = true);
 
         #endregion DeleteAsync
+
+        #region Restore
+
+        /// <summary>
+        /// Ability to restore a soft-deleted entity using the entity itself.
+        /// </summary>
+        IResult<bool> Restore(T o);
+
+        /// <summary>
+        /// Ability to restore a soft-deleted entity using the entity id.
+        /// </summary>
+        IResult<bool> Restore(long id);
+
+        #endregion Restore
+
+        #region RestoreAsync
+
+        /// <summary>
+        /// Ability to restore a soft-deleted entity using the entity itself.
+        /// </summary>
+        Task<IResult<bool>> RestoreAsync(T o);
+
+        /// <summary>
+        /// Ability to restore a soft-deleted entity using the entity id.
+        /// </summary>
+        Task<IResult<bool>> RestoreAsync(long id);
+
+        #endregion RestoreAsync
+
+        #endregion Methods
     }
 }

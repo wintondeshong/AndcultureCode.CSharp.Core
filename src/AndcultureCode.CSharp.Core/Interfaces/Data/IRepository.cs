@@ -17,7 +17,7 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Data
         /// <summary>
         /// Ability to set and get the underlying DbContext's command timeout
         /// </summary>
-        int? CommandTimeout { get; set; }
+        new int? CommandTimeout { get; set; }
 
         #endregion Properties
     }
