@@ -5,14 +5,12 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using AndcultureCode.CSharp.Core.Interfaces.Entity;
 
-namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
+namespace AndcultureCode.CSharp.Core.Interfaces.Data
 {
     /// <summary>
-    ///
+    /// Repository for reading <typeparamref name="T"/> data
     /// </summary>
-    /// <typeparam name="T"></typeparam>
-    public interface IRepositoryReadConductor<T>
-        where T : class, IEntity
+    public interface IReadRepository<T> where T : class, IEntity
     {
         #region Properties
 
@@ -28,7 +26,7 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         #region FindAll
 
         /// <summary>
-        /// Configure lazy loaded queryable, given provided parameters, to load a list of <typeparamref name="T"/>
+        /// Find all filtered, sorted and paged
         /// </summary>
         /// <param name="filter">Filter to be used for querying.</param>
         /// <param name="orderBy">Properties that should be used for sorting.</param>
@@ -37,7 +35,6 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         /// <param name="take">Number of entities per page.</param>
         /// <param name="ignoreQueryFilters">If true, global query filters will be ignored for this query.</param>
         /// <param name="asNoTracking">Ignore change tracking on the result. Set <code>true</code> for read-only operations.</param>
-        /// <returns></returns>
         IResult<IQueryable<T>> FindAll(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
@@ -59,7 +56,6 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         /// <param name="take">Number of entities per page.</param>
         /// <param name="ignoreQueryFilters">If true, global query filters will be ignored for this query.</param>
         /// <param name="asNoTracking">Ignore change tracking on the result. Set <code>true</code> for read-only operations.</param>
-        /// <returns></returns>
         IResult<IQueryable<IGrouping<TKey, T>>> FindAll<TKey>(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
@@ -74,7 +70,7 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         /// <summary>
         /// Configure lazy loaded queryable, given provided parameters, to load a list of <typeparamref name="T"/>
         /// grouped by a <typeparamref name="TKey"/> and selected by groupBySelector tranformed into <typeparamref name="TResult"/>
-        /// ref to microsoft docs: https://shorturl.at/jptP3
+        /// ref to: https://docs.microsoft.com/en-us/dotnet/api/system.linq.queryable.groupby?view=netcore-3.1#System_Linq_Queryable_GroupBy__3_System_Linq_IQueryable___0__System_Linq_Expressions_Expression_System_Func___0___1___System_Linq_Expressions_Expression_System_Func___1_System_Collections_Generic_IEnumerable___0____2___
         /// </summary>
         /// <param name="filter">Filter to be used for querying.</param>
         /// <param name="orderBy">Properties that should be used for sorting.</param>
@@ -98,30 +94,12 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
             bool asNoTracking = false
         );
 
-        /// <summary>
-        /// Alternative FindAll for retrieving records using NextLinkParams in place of traditional
-        /// determinate pagination mechanisms, such as; skip and take.
-        /// </summary>
-        /// <param name="filter">Filter to be used for querying.</param>
-        /// <param name="orderBy">Properties that should be used for sorting.</param>
-        /// <param name="nextLinkParams"></param>
-        /// <param name="ignoreQueryFilters">If true, global query filters will be ignored for this query.</param>
-        /// <param name="asNoTracking">Ignore change tracking on the result. Set <code>true</code> for read-only operations.</param>
-        /// <returns></returns>
-        IResult<IQueryable<T>> FindAll(
-            Dictionary<string, string> nextLinkParams,
-            Expression<Func<T, bool>> filter = null,
-            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
-            bool? ignoreQueryFilters = false,
-            bool asNoTracking = false
-        );
-
         #endregion FindAll
 
         #region FindAllAsync
 
         /// <summary>
-        /// Configure lazy loaded queryable, given provided parameters, to load a list of <typeparamref name="T"/>
+        /// Find all filtered, sorted and paged
         /// </summary>
         /// <param name="filter">Filter to be used for querying.</param>
         /// <param name="orderBy">Properties that should be used for sorting.</param>
@@ -130,7 +108,6 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         /// <param name="take">Number of entities per page.</param>
         /// <param name="ignoreQueryFilters">If true, global query filters will be ignored for this query.</param>
         /// <param name="asNoTracking">Ignore change tracking on the result. Set <code>true</code> for read-only operations.</param>
-        /// <returns></returns>
         Task<IResult<IQueryable<T>>> FindAllAsync(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
@@ -152,7 +129,6 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         /// <param name="take">Number of entities per page.</param>
         /// <param name="ignoreQueryFilters">If true, global query filters will be ignored for this query.</param>
         /// <param name="asNoTracking">Ignore change tracking on the result. Set <code>true</code> for read-only operations.</param>
-        /// <returns></returns>
         Task<IResult<IQueryable<IGrouping<TKey, T>>>> FindAllAsync<TKey>(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
@@ -167,7 +143,7 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         /// <summary>
         /// Configure lazy loaded queryable, given provided parameters, to load a list of <typeparamref name="T"/>
         /// grouped by a <typeparamref name="TKey"/> and selected by groupBySelector tranformed into <typeparamref name="TResult"/>
-        /// ref to microsoft docs: https://shorturl.at/jptP3
+        /// ref to: https://docs.microsoft.com/en-us/dotnet/api/system.linq.queryable.groupby?view=netcore-3.1#System_Linq_Queryable_GroupBy__3_System_Linq_IQueryable___0__System_Linq_Expressions_Expression_System_Func___0___1___System_Linq_Expressions_Expression_System_Func___1_System_Collections_Generic_IEnumerable___0____2___
         /// </summary>
         /// <param name="filter">Filter to be used for querying.</param>
         /// <param name="orderBy">Properties that should be used for sorting.</param>
@@ -178,7 +154,6 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         /// <param name="take">Number of entities per page.</param>
         /// <param name="ignoreQueryFilters">If true, global query filters will be ignored for this query.</param>
         /// <param name="asNoTracking">Ignore change tracking on the result. Set <code>true</code> for read-only operations.</param>
-        /// <returns></returns>
         Task<IResult<IQueryable<TResult>>> FindAllAsync<TKey, TResult>(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
@@ -191,32 +166,12 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
             bool asNoTracking = false
         );
 
-        /// <summary>
-        /// Alternative FindAll for retrieving records using NextLinkParams in place of traditional
-        /// determinate pagination mechanisms, such as; skip and take.
-        /// </summary>
-        /// <param name="filter">Filter to be used for querying.</param>
-        /// <param name="orderBy">Properties that should be used for sorting.</param>
-        /// <param name="nextLinkParams"></param>
-        /// <param name="ignoreQueryFilters">If true, global query filters will be ignored for this query.</param>
-        /// <param name="asNoTracking">Ignore change tracking on the result. Set <code>true</code> for read-only operations.</param>
-        /// <returns></returns>
-        Task<IResult<IQueryable<T>>> FindAllAsync(
-            Dictionary<string, string> nextLinkParams,
-            Expression<Func<T, bool>> filter = null,
-            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
-            bool? ignoreQueryFilters = false,
-            bool asNoTracking = false
-        );
-
         #endregion FindAllAsync
 
         #region FindAllCommitted
 
         /// <summary>
-        /// Similar to FindAll, this evaluates the parameters as given. The big difference here is that the query is executed
-        /// inside the conductor and a List<typeparamref name="T"/> is returned and NOT Queryable<typeparamref name="T"/>.  This is primary used in cases where calculated
-        /// fields need to be executed (committed) inside the conductor.
+        /// Find all filtered, sorted and paged and converts to an IList <typeparamref name="T"/>
         /// </summary>
         /// <param name="filter">Filter to be used for querying.</param>
         /// <param name="orderBy">Properties that should be used for sorting.</param>
@@ -224,29 +179,12 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         /// <param name="skip">Number of entities that should be skipped.</param>
         /// <param name="take">Number of entities per page.</param>
         /// <param name="ignoreQueryFilters">If true, global query filters will be ignored for this query.</param>
-        /// <returns></returns>
         IResult<IList<T>> FindAllCommitted(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             string includeProperties = null,
             int? skip = null,
             int? take = null,
-            bool? ignoreQueryFilters = false
-        );
-
-        /// <summary>
-        /// Alternative FindAll for retrieving records using NextLinkParams in place of traditional
-        /// determinate pagination mechanisms, such as; skip and take.
-        /// </summary>
-        /// <param name="filter">Filter to be used for querying.</param>
-        /// <param name="orderBy">Properties that should be used for sorting.</param>
-        /// <param name="nextLinkParams"></param>
-        /// <param name="ignoreQueryFilters">If true, global query filters will be ignored for this query.</param>
-        /// <returns></returns>
-        IResult<IList<T>> FindAllCommitted(
-            Dictionary<string, string> nextLinkParams,
-            Expression<Func<T, bool>> filter = null,
-            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             bool? ignoreQueryFilters = false
         );
 
@@ -255,9 +193,7 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         #region FindAllCommittedAsync
 
         /// <summary>
-        /// Similar to FindAll, this evaluates the parameters as given. The big difference here is that the query is executed
-        /// inside the conductor and a List<typeparamref name="T"/> is returned and NOT Queryable<typeparamref name="T"/>.  This is primary used in cases where calculated
-        /// fields need to be executed (committed) inside the conductor.
+        /// Find all filtered, sorted and paged and converts to an IList <typeparamref name="T"/>
         /// </summary>
         /// <param name="filter">Filter to be used for querying.</param>
         /// <param name="orderBy">Properties that should be used for sorting.</param>
@@ -265,29 +201,12 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         /// <param name="skip">Number of entities that should be skipped.</param>
         /// <param name="take">Number of entities per page.</param>
         /// <param name="ignoreQueryFilters">If true, global query filters will be ignored for this query.</param>
-        /// <returns></returns>
         Task<IResult<IList<T>>> FindAllCommittedAsync(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             string includeProperties = null,
             int? skip = null,
             int? take = null,
-            bool? ignoreQueryFilters = false
-        );
-
-        /// <summary>
-        /// Alternative FindAll for retrieving records using NextLinkParams in place of traditional
-        /// determinate pagination mechanisms, such as; skip and take.
-        /// </summary>
-        /// <param name="filter">Filter to be used for querying.</param>
-        /// <param name="orderBy">Properties that should be used for sorting.</param>
-        /// <param name="nextLinkParams"></param>
-        /// <param name="ignoreQueryFilters">If true, global query filters will be ignored for this query.</param>
-        /// <returns></returns>
-        Task<IResult<IList<T>>> FindAllCommittedAsync(
-            Dictionary<string, string> nextLinkParams,
-            Expression<Func<T, bool>> filter = null,
-            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             bool? ignoreQueryFilters = false
         );
 
@@ -299,15 +218,14 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         /// Finds an entity by its Id.
         /// </summary>
         /// <param name="id">The entity identity value.</param>
-        /// <returns>The entity with the provided identity value.</returns>
-        IResult<T> FindById(long id);
+        /// <param name="ignoreQueryFilters">If true, global query filters will be ignored for this query.</param>
+        IResult<T> FindById(long id, bool? ignoreQueryFilters = false);
 
         /// <summary>
         /// Finds an entity by its Id that also matches a filter.
         /// </summary>
         /// <param name="id">The entity identity value.</param>
         /// <param name="filter">Filter to be used for querying.</param>
-        /// <returns>The entity with he provided identity value and filter condition met.</returns>
         IResult<T> FindById(long id, Expression<Func<T, bool>> filter);
 
         /// <summary>
@@ -315,7 +233,6 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         /// </summary>
         /// <param name="id">The entity identity value.</param>
         /// <param name="includeProperties">Navigation properties that should be included.</param>
-        /// <returns>The entity with the provided identity value.</returns>
         IResult<T> FindById(long id, params Expression<Func<T, object>>[] includeProperties);
 
         /// <summary>
@@ -324,15 +241,13 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         /// <param name="id">The entity identity value.</param>
         /// <param name="ignoreQueryFilters">If true, global query filters will be ignored for this query.</param>
         /// <param name="includeProperties">Navigation properties that should be included.</param>
-        /// <returns>The entity with the provided identity value.</returns>
-        IResult<T> FindById(long id, bool ignoreQueryFilters, params Expression<Func<T, object>>[] includeProperties);
+        IResult<T> FindById(long id, bool? ignoreQueryFilters = false, params Expression<Func<T, object>>[] includeProperties);
 
         /// <summary>
         /// Finds an entity by its Id.
         /// </summary>
         /// <param name="id">The entity identity value.</param>
         /// <param name="includeProperties">Navigation properties that should be included.</param>
-        /// <returns>The entity with the provided identity value.</returns>
         IResult<T> FindById(long id, params string[] includeProperties);
 
         #endregion FindById
@@ -343,15 +258,14 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         /// Finds an entity by its Id.
         /// </summary>
         /// <param name="id">The entity identity value.</param>
-        /// <returns>The entity with the provided identity value.</returns>
-        Task<IResult<T>> FindByIdAsync(long id);
+        /// <param name="ignoreQueryFilters">If true, global query filters will be ignored for this query.</param>
+        Task<IResult<T>> FindByIdAsync(long id, bool? ignoreQueryFilters = false);
 
         /// <summary>
         /// Finds an entity by its Id that also matches a filter.
         /// </summary>
         /// <param name="id">The entity identity value.</param>
         /// <param name="filter">Filter to be used for querying.</param>
-        /// <returns>The entity with he provided identity value and filter condition met.</returns>
         Task<IResult<T>> FindByIdAsync(long id, Expression<Func<T, bool>> filter);
 
         /// <summary>
@@ -359,7 +273,6 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         /// </summary>
         /// <param name="id">The entity identity value.</param>
         /// <param name="includeProperties">Navigation properties that should be included.</param>
-        /// <returns>The entity with the provided identity value.</returns>
         Task<IResult<T>> FindByIdAsync(long id, params Expression<Func<T, object>>[] includeProperties);
 
         /// <summary>
@@ -368,15 +281,13 @@ namespace AndcultureCode.CSharp.Core.Interfaces.Conductors
         /// <param name="id">The entity identity value.</param>
         /// <param name="ignoreQueryFilters">If true, global query filters will be ignored for this query.</param>
         /// <param name="includeProperties">Navigation properties that should be included.</param>
-        /// <returns>The entity with the provided identity value.</returns>
-        Task<IResult<T>> FindByIdAsync(long id, bool ignoreQueryFilters, params Expression<Func<T, object>>[] includeProperties);
+        Task<IResult<T>> FindByIdAsync(long id, bool? ignoreQueryFilters = false, params Expression<Func<T, object>>[] includeProperties);
 
         /// <summary>
         /// Finds an entity by its Id.
         /// </summary>
         /// <param name="id">The entity identity value.</param>
         /// <param name="includeProperties">Navigation properties that should be included.</param>
-        /// <returns>The entity with the provided identity value.</returns>
         Task<IResult<T>> FindByIdAsync(long id, params string[] includeProperties);
 
         #endregion FindByIdAsync
